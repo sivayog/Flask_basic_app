@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>member - {{ member.full_name }}</title>
+    </head>
+    <body>
+        <h1>{{ member.full_name }}</h1>
+        <ul>
+          <li><strong>Born:</strong> {{ member.born }}</li>
+          <li><strong>Nationality:</strong> {{ member.nationality }}</li>
+          <li><strong>pro Work:</strong> {{ member.pro_work }}</li>
+        </ul>
+        <div><img src="{{ member.picture }}" alt="{{ member.full_name }}" width="300px"></div>
+
+        <p><a href="{{ url_for('members') }}">Back to members list</a></p>
+    </body>
+</html>
