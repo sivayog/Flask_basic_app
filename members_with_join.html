@@ -1,0 +1,8 @@
+<html>
+    <h1>This is the list of members (With engine):</h1>
+    <ul>
+        {% for m in members %}
+        <li>{{m['id']}}: {{m['name']}} (from {{m['country']}})</li>
+        {% endfor %}
+    </ul>
+</html>

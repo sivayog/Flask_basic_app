@@ -1,12 +1,8 @@
 <html>
-    <head>
-        <title>members</title>
-    </head>
-    <body>
-        <h1>Here's a list of members:</h1>
-        <ul>
-          <li><a href="/author/RAM">JAYA RAM</a></li>
-          <li><a href="{{ url_for('member', members_name='Jayaram') }}">Jayaram</a></li>
-        </ul>
-    </body>
+    <h1>This is the list of members:</h1>
+    <ul>
+        <li>{{members[0]['id']}}: {{members[0]['name']}}</li>
+        <li>{{members[1]['id']}}: {{members[1]['name']}}</li>
+        <li>{{members[2]['id']}}: {{members[2]['name']}}</li>
+    </ul>
 </html>

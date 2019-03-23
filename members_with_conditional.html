@@ -1,0 +1,12 @@
+<html>
+    <h1>This is the list of members (with conditional):</h1>
+    <ul>
+        {% for m in members %}
+            {% if m['id'] > 2 %}
+                <li>{{m['id']}}: {{m['name']}}</li>
+            {% else %}
+                <li><b>{{m['id']}}: {{m['name']}}</b></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</html>
